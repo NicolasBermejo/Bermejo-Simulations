@@ -1,18 +1,28 @@
 import React,{ useState } from 'react';
 import { Link } from 'react-router-dom';
+import './Navbar.css';
+import { Button } from './Button.js';
 
 function Navbar() {
     const [click, setClick] = useState(false);
+    const [button, setButton] = useState(true);
 
     const handleClick = () => setClick(!click);
     const closeMobileMenu = () => setClick(false);
+    const showButton = () => {
+        if (window.innerWidth <= 960) {
+            setButton(false);
+        } else {
+            setButton(true);
+        }
+        };
 
     return (
         <>
             <nav className="navbar">
                 <div className="navbar-container">
                     <Link to="/" className="navbar-logo">
-                        SMLT <i class="fas fa-dice-d20"></i>
+                        ZYGO <i class="fas fa-dice-d20"></i>
                     </Link>
                     <div className='menu-icon' onClick={handleClick}> 
                         <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
@@ -24,13 +34,13 @@ function Navbar() {
                             </Link>
                         </li>
                         <li className='nav-item'>
-                            <Link to='/about' className='nav-links' onClick={closeMobileMenu}>
-                                About
+                            <Link to='/simulations' className='nav-links' onClick={closeMobileMenu}>
+                                Simulations
                             </Link>
                         </li>
                         <li className='nav-item'>
-                            <Link to='/simulations' className='nav-links' onClick={closeMobileMenu}>
-                                Simulations
+                            <Link to='/about' className='nav-links' onClick={closeMobileMenu}>
+                                About
                             </Link>
                         </li>
                         {/* <li className='nav-item'>
@@ -39,6 +49,7 @@ function Navbar() {
                             </Link>
                         </li> */}
                     </ul>
+                    {button && <Button buttonStyle='btn--outline'>ABOUT</Button>}
                 </div>
             </nav>
         </>
