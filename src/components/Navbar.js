@@ -11,11 +11,13 @@ function Navbar() {
     const closeMobileMenu = () => setClick(false);
     const showButton = () => {
         if (window.innerWidth <= 960) {
-            setButton(false);
-        } else {
             setButton(true);
+        } else {
+            setButton(false);
         }
         };
+
+    window.addEventListener('resize', showButton);
 
     return (
         <>
@@ -49,7 +51,7 @@ function Navbar() {
                             </Link>
                         </li> */}
                     </ul>
-                    {button && <Button buttonStyle='btn--outline'>ABOUT</Button>}
+                    {/* {button && <Button buttonStyle='btn--outline'>SIGN UP</Button>} */}
                 </div>
             </nav>
         </>
