@@ -125,5 +125,8 @@
       .cards__wrapper {
           width: 450px;
       }
+      .cards__item__text {
+          font-size: 15px;
+      }
       
   }
