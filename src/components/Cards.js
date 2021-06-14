@@ -23,6 +23,27 @@ function Cards() {
                             href='https://agence-juridique.com/articles/comment-fonctionne-la-distribution-de-dividendes-en-sas'
                         />
                     </ul>
+                    <ul className='cards__items'>
+                        {/* keep text within 30 chars */}
+                        <CardItem 
+                            src='images/company.jpg'
+                            text='SAS ou SASU?'
+                            label='Entreprise'
+                            href= 'https://www.shine.fr/blog/sas-ou-sasu/'
+                        />
+                        <CardItem 
+                            src='images/pyramid.jpg'
+                            text='Se mettre a son compte'
+                            label='Entreprise'
+                            href='https://www.lecoindesentrepreneurs.fr/se-mettre-a-son-compte/'
+                        />
+                        <CardItem 
+                            src='images/tax-machine.jpg'
+                            text='Impôt sur le Revenue ou la Société?'
+                            label='Fiscalité'
+                            href='https://www.legalplace.fr/guides/sas-ir/'
+                        />
+                    </ul>
                 </div>
             </div>
         </div>
