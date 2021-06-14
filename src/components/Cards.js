@@ -11,7 +11,7 @@ function Cards() {
                     <ul className='cards__items'>
                         {/* keep text within 30 chars */}
                         <CardItem 
-                            src='images/tax-heaven.jpg'
+                            src='images/tax-files.jpg'
                             text='La fiscalité de la SASU'
                             label='Fiscalité'
                             href= 'https://www.lecoindesentrepreneurs.fr/fiscalite-de-la-sasu/'
