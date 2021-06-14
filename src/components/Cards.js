@@ -9,9 +9,10 @@ function Cards() {
             <div className='cards__container'>
                 <div className='cards__wrapper'>
                     <ul className='cards__items'>
+                        {/* keep text within 30 chars */}
                         <CardItem 
                             src='images/tax-heaven.jpg'
-                            text='La fiscalité de la SASU : bénéfices, TVA, autres impôts et taxes'
+                            text='La fiscalité de la SASU'
                             label='Fiscalité'
                             href= 'https://www.lecoindesentrepreneurs.fr/fiscalite-de-la-sasu/'
                         />
