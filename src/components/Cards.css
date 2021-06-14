@@ -97,6 +97,7 @@
     color: #252e48;
     font-size: 18px;
     line-height: 24px;
+    margin-top: 5px;
   }
   
   @media only screen and (min-width: 1200px) {
@@ -114,5 +115,9 @@
   @media only screen and (max-width: 1024px) {
     .cards__item {
       margin-bottom: 2rem;
+    }
+
+    .cards__item__text {
+        font-size: 12px;
     }
   }
